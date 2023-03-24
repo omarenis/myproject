@@ -1,0 +1,53 @@
+{% macro navbar(user) %}
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg top-0 shadow w-100 bg-white position-absolute start-0 end-0">
+    <div class="container-fluid">
+        <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="/">
+            LOGO
+        </a>
+        <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </span>
+        </button>
+        <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+            <ul class="navbar-nav navbar-nav-hover mx-auto">
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                    <a role="button"
+                       class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center "
+                       id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+                        home
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                    <a role="button"
+                       class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center "
+                       id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
+                        contact us
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                    <a role="button"
+                       class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center "
+                       id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
+                        How to create your event
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-lg-flex d-none align-items-center">
+                <li class="nav-link">
+                    <a href="/login" class="btn btn-sm  btn-primary  mb-0 me-1">login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/signup" class="btn btn-sm  btn-primary  mb-0 me-1">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+{% endmacro %}
