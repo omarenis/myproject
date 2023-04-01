@@ -3,6 +3,6 @@ export class IndexController
 {
     async get(request: Request, response: Response)
     {
-        return response.render('public/interfaces/index.html');
+        return response.render('public/screens/index.html');
     }
 }
